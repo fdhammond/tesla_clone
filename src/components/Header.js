@@ -24,6 +24,22 @@ function Header() {
 
                 </CustomMenu>
             </RightMenu>
+            <BurgerNav>
+                <li><a href="#">Existing Inventory</a></li>
+                <li><a href="#">Used Inventory</a></li>
+                <li><a href="#">Trade-in </a></li>
+                <li><a href="#">Powerwall</a></li>
+                <li><a href="#">Comercial Energy</a></li>
+                <li><a href="#">Utilities</a></li>
+                <li><a href="#">Test Drive</a></li>
+                <li><a href="#">Charging</a></li>
+                <li><a href="#">Find Us</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">More</a></li>
+            </BurgerNav>
 
        </Container>
       
@@ -42,6 +58,7 @@ const Container = styled.div`
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 `
 
 const Menu = styled.div`
@@ -73,5 +90,15 @@ const RightMenu = styled.div`
 
 const CustomMenu = styled(MenuIcon)`
     cursor: pointer;
-
 `
+
+const BurgerNav = styled.div`
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    width: 300px;
+    z-index: 16;
+`
+// 1.40
